@@ -1,6 +1,7 @@
 // Require Node modules in the browser thanks to Browserify: http://browserify.org
 
 var bespoke = require('bespoke'),
+  camera = require('bespoke-camera'),
   cube = require('bespoke-theme-cube'),
   keys = require('bespoke-keys'),
   touch = require('bespoke-touch'),
@@ -12,7 +13,7 @@ var bespoke = require('bespoke'),
 
 
 // Bespoke.js
-bespoke.from('#presentation', [
+var deck = bespoke.from('#presentation', [
   cube(),
   keys(),
   touch(),
@@ -20,15 +21,15 @@ bespoke.from('#presentation', [
   backdrop(),
   scale(),
   hash(),
-  progress()
-
+  progress(),
+  camera()
 ]);
 
 bespoke.from('#presentation', [
   bespoke.touch('vertical')
 ]);
 
-bespoke.progress = function(deck) {
+bespoke.plugins.progress = function(deck) {
   var progress = document.querySelector('#progress');
   deck.on('activate', function(event) {
     progress.style.width = (

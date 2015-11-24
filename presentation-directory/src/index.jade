@@ -49,7 +49,7 @@ html
         img(src='images/amazon.jpg' id='amazon')
 
 
-      section(data-bespoke-backdrop='special' id='emphatic')
+      section
         h2 Need I say more?!
         h3 (Hint: No I don't)
         img(src='images/happy4.svg' id='happy')
@@ -60,9 +60,21 @@ html
         br
         ul
           li Automatically open a camera
+        br
+
+      section(data-camera='fullscreen' id='camera')
+
+      section(id ='almostDone')
+        h2.bullet Or...
+        br
+        ul
           li Change the rotation of slides
           li Create your own plugins
-        br
+          li And so much more!
+
+      section(id='finalSlide')
+        h2 The moral of this presentation is....
+        h3 Be an Informatics major!
 
 
     script(src='build/build.js')
