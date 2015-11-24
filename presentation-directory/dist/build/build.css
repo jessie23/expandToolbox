@@ -1,0 +1,64 @@
+body {
+  font-family: Helvetica;
+}
+.bespoke-parent {
+  background: #999;
+  color: #b9f;
+}
+.bespoke-slide {
+  background: #f2f2f2;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-transform-origin: 50% 50% -400px;
+  transform-origin: 50% 50% -400px;
+}
+.bespoke-inactive {
+  opacity: 0;
+}
+.bespoke-before {
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+}
+.bespoke-after {
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+}
+h3,
+li {
+  color: #42d4ca;
+}
+#people {
+  height: 50%;
+}
+#cake {
+  height: 30%;
+  margin-bottom: 20px;
+}
+li {
+  font-size: 1.5em;
+}
+#google {
+  width: 200px;
+  height: 100px;
+}
+#jobs,
+#cakeslide,
+#peopleslide,
+#end {
+  background: #fff;
+}
+#microsoft,
+#amazon {
+  width: 100px;
+  height: 100px;
+}
+img {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.bespoke-slide #emphatic {
+  width: 100%;
+}
+#happy {
+  height: 100px;
+}
