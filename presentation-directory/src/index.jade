@@ -1,0 +1,68 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Why You Should Be An Informatics Major
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article(id='presentation')
+      //each "section" is a slide in the presentation
+      section(data-bespoke-hash='title-page')
+        h1 Why You Should Be An Informatics Major
+        img(src='images/screen80.svg')
+      
+      //bespoke-hash is an easy way to name the url path
+      section(data-bespoke-hash='reason-1' id='peopleslide')
+        h2 The people are great
+        img(src='images/man204.svg' id='people')
+
+
+      section(data-bespoke-hash='reason-2' id='stearns')
+        h2 You will take classes with Dr. Stearns
+        img(src='images/dlsinfo-1.jpg')
+
+
+      section(data-bespoke-hash='reason-3' id='cakeslide')
+        h2 You get to learn bespoke
+        h3 (It's a piece of cake!)
+        img(src='images/sweet9.svg' id='cake')
+        
+
+      section(data-bespoke-hash='reason-4' id='track')
+        h2.bullet You can choose any track you want
+        p
+
+        ul
+          li HCI
+          li Data Science
+          li Custom
+
+      section(data-bespoke-hash='reason-5' data-bespoke-touch='vertical' id='jobs')
+        h2 You can work for a cool company after graduation!
+        h3 (hopefully)
+        img(src='images/Google-Logo.gif' id='google')
+        img(src='images/Microsoft.jpg' id='microsoft')
+        img(src='images/amazon.jpg' id='amazon')
+
+
+      section(data-bespoke-backdrop='special' id='emphatic')
+        h2 Need I say more?!
+        h3 (Hint: No I don't)
+        img(src='images/happy4.svg' id='happy')
+
+      section(id='end')
+        h2.bullet This is just the beginning of how you can use Bespoke...
+        br
+        br
+        ul
+          li Automatically open a camera
+          li Change the rotation of slides
+          li Create your own plugins
+        br
+
+
+    script(src='build/build.js')
